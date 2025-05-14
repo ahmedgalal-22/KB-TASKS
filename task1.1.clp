@@ -15,7 +15,7 @@
 (reset)
 (run) 
 
-The animal type is: cat
-The animal type is: lion
+The animal type : cat
+The animal type : lion
 
 
