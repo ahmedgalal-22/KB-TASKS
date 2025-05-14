@@ -1,16 +1,21 @@
-(deftemplate MAIN::animal
+(deftemplate animal
    (slot type))
 
-(defrule MAIN::check_animal
+(defrule check_animal
    (animal (type ?t&~dog))
    =>
    (printout t "The animal type is: " ?t crlf))
 
 
-(deffacts MAIN::animals
+(deffacts animals
    (animal (type cat))
    (animal (type dog))
    (animal (type lion)))
 
+(reset)
+(run) 
+
+The animal type is: cat
+The animal type is: lion
 
 
