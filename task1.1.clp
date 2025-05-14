@@ -1,19 +1,19 @@
-(deftemplate animal
+CLIPS> (deftemplate animal
    (slot type))
 
-(defrule check_animal
+CLIPS> (defrule check_animal
    (animal (type ?t&~dog))
    =>
    (printout t "The animal type is: " ?t crlf))
 
 
-(deffacts animals
+CLIPS> (deffacts animals
    (animal (type cat))
    (animal (type dog))
    (animal (type lion)))
 
-(reset)
-(run) 
+CLIPS> (reset)
+CLIPS> (run) 
 
 The animal type : cat
 The animal type : lion
